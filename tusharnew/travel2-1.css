@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+.text{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    text-decoration-color: blue;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 6000;
+
+}
+
+.search{
+    position: absolute;
+    top: 70%;
+   width: 74%;
+    border-radius: 0px;
+    box-shadow: none !important;
+    border: none;
+    padding-left: 400px;
+    
+   
+}
+
+.search .btn:hover{
+  background-color: crimson;
+  
+}
+
+.info{
+    position: absolute;
+    top:120%;
+    width: 120%;
+    padding-left: 580px;
+    border-radius: 300px;
+}
+.info .t  li h1{
+    color:white;
+    width: auto;
+
+}
+
+.info .t strong{
+    color: white;
+}
+.info .btn{
+    margin-left: 93px;
+    border-radius: 200px;
+    
+}
+.info .t input{
+     border-radius: 200px;
+}
+.banner .text  h3{
+    text-shadow:  3px 5px 20px black;
+}
+.banner .text  strong{
+    text-shadow:  3px 5px 20px black;
+}
+
+.ticket strong{
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    text-align: center; 
+    color: white;
+    text-shadow: 6px 6px 4px black ;
+    font-size: 40px;
+
+    font-style: italic;
+}
+
+.sp{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center; 
+}
+
+.collapse li strong{
+    color:whitesmoke;
+    text-align: center;
+    font-style: italic;
+    width: 40px;
+    padding-left: 800px;
+    font-size: 40px;
+}
+
+.login
+{
+   padding-left: 1300px;
+  
+   
+}
+
+.login input{
+    position: absolute;
+    top: 20%;
+    width: 10%;
+    color: black;
+    border-radius: 200px;
+    background-color: whitesmoke;
+}
+.login input:hover{
+    background-color: black;
+}
+
+.block{
+    
+    display: inline-flex;
+    
+   
+}
+.block .b1{
+    background-image: linear-gradient(lightblue ,lightgreen);
+    border-radius: 100px;
+    padding: 50px;
+    margin: 40px;
+    box-shadow: 4px 6px 20px black;
+
+}
+
+.block .b1 button:hover{
+   background-color: red;
+}
+
+.last{
+    display: inline-flex;
+    
+}
+.last .other{
+   padding: 150px;
+   padding-top: 60px;
+   background-color: rgb(26, 23, 23);
+   
+}
+
+
