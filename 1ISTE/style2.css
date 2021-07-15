@@ -1,0 +1,423 @@
+html{
+    font-size: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 59, 14, 0.7),rgba(41, 65, 15, 0.7)),url("./images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo{
+    clip-path: circle(40%);
+}
+
+.ml-5{
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+.ml-3{
+    margin-left: 2.5rem;
+}
+
+.mr-2{
+    margin-right: 1.5rem;
+}
+
+.mr-3{
+    margin-right: 7.5rem;
+
+    border-radius: 40%;
+    border: 2px solid white;
+    padding:0.25rem 1.5rem;
+    font-size: 1rem;
+}
+
+.about{
+    display: flex;
+}
+
+.about h1{
+    /* width: 13rem; */
+    padding: 3.5rem 7.5rem;
+    /* border: 2px solid white; */
+    color: white;
+    font-size: 2.5rem;
+}
+
+.about p{
+    /* border: 2px solid white; */
+    margin: 3.5rem 4rem;
+    margin-left: 0;
+    margin-right: 7rem;
+    padding-left: 0.5rem;
+    color: white;
+    border-left:2px solid tomato;
+}
+
+@media (max-width:760px)
+{
+    html{
+       font-size: 12px;
+   }
+   .about{
+       display: block;
+   }
+   .about p {
+    text-align: center;
+    margin: -0.5rem 6rem;
+    margin-top: 0rem;
+    border: 0;
+}
+   .about h1{
+       text-align: center;
+   }
+   .ml-5 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    }
+    .navbar-toggler{
+        margin-right: 3.5rem;
+    }
+}
+
+/* about section ends */
+
+.directors{
+    height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 59, 14, 0.7),rgba(41, 65, 15, 0.7)),url("./images/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.directors-heading{
+    width: 100%;
+    height: 15%;
+    /* border: 2px solid black; */
+    text-align: center;
+    color: white;
+}
+
+.directors-heading h3{
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.directors-full{
+    /* border: 2px solid white; */
+    margin: 0 10rem;
+}
+
+.directors-row{
+    display: flex;
+    /* height: 16rem; */
+}
+
+.directors-row-col{
+    width: 13rem;
+    height: 15rem;
+    /* border: 2px solid white; */
+    margin: 2% 3%;
+    background-color: rgba(32, 56, 31, 0.7);
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-top: 2%;
+    /* display: none; */
+}
+
+.directors-row-col-hidden{
+    width: 13rem;
+    height: 15rem;
+    /* border: 2px solid white; */
+    margin: 2% 3%;
+    background-color: rgba(32, 56, 31, 0.7);
+    text-align: center;
+    color: white;
+    position: relative;
+    display: none;
+    padding-top: 2%;
+}
+
+.directors-row-col img{
+    height: 100px;
+    clip-path: circle(30%);
+}
+
+.plusicon{
+    color: tomato;
+    font-size: 2rem;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 86%;
+    left: 44%;
+}
+
+.icons-flex{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 1rem;
+}
+
+@media(max-width:1024px)
+{
+    html{
+        font-size: 12px;
+    }
+}
+@media(max-width:768px)
+{
+    html{
+        font-size: 12px;
+    }
+    .directors-row{
+        display:inline-block;
+    }
+    .directors-heading{
+        height: 10%;
+    }
+    .directors-row-col, .directors-row-col-hidden {
+        /* margin-left: 6rem; */
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    .directors-full{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:425px)
+{
+    html{
+        font-size: 8px;
+    }
+    .directors-row{
+        display: inline-block;
+    }
+    .directors-row-col, .directors-row-col-hidden {
+        /* margin-left: 2.5rem; */
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .directors-row-col img{
+        height: 5rem;
+    }
+    .directors{
+        height: 100vh;
+    }
+}
+/* director section ends */
+
+.clients{
+    height: 60vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(16, 59, 14, 0.7),rgba(41, 65, 15, 0.7)),url("bg3.jpg"); */
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.clients-heading{
+    margin:0% 33%;
+    text-align: center;
+    /* border: 2px solid wheat; */
+}
+
+.clients-heading h3{
+    /* margin-top: 5%; */
+    padding-top: 5%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4%;
+    /* border: 2px solid white; */
+}
+
+.clients-logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+.clients-logos img{
+    height: 2rem;
+}
+
+@media(max-width:425px)
+{
+    .clients-logos img{
+    }
+    .clients{
+        height: 20vh;
+    }
+}
+
+.four{
+    display: flex;
+    background-color: tomato;
+    height: 7rem;
+    width: 100%;
+    clip-path: polygon(0 0,100% 0%,90% 50%,100% 100%,0% 100%,10% 50%);
+    /* position:absolute; */
+}
+
+.four-1{
+    width: 60%;
+    text-align: center;
+    padding-top: 2.5rem;
+    /* border: 2px solid red; */
+}
+
+.four-1 h4{
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+    font-weight: 800;
+}
+
+.four-sub{
+    position:absolute;
+}
+
+.four-2{
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+}
+
+.contactnew{
+    border-color: saddlebrown;
+    color: wheat;
+    text-decoration: none;
+    border: 3px solid black;
+    /* border-radius: 40%; */
+    padding: 2px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* section four ends */
+
+.five{
+    display: flex;
+    background-color: rgb(44, 33, 33);
+    height: 7rem;
+    width: 100%;
+    color: white;
+}
+
+.five-1{
+    width: 30%;
+    display: block;
+}
+
+.five-2{
+    width: 40%;
+
+    padding: 1rem 0px;
+}
+
+.five-2 h4{
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+
+.five-3{
+    width: 30%;
+    display: block;
+    margin-top: 1rem;
+}
+
+.five-1 img{
+    height: 4rem;
+    clip-path: circle(30%);
+    margin: 0.25rem 35%;
+    margin-bottom: 0px;
+}
+
+.footer{
+    margin: 0px 26%;!important
+}
+
+.footer a{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.five-3-icons{
+    display: flex;
+    margin: 1rem;
+    font-size: 1.25rem;
+    justify-content: center;
+}
+
+.indicons{
+    margin: 0px 0.5rem;
+}
+
+.five-3 h5{
+    font-size: 0.75rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+@media (max-width:425px)
+{
+    html{
+        font-size: 8px;
+    }
+    .four{
+        display: block;
+    }
+    .four-1{
+        padding-top: 0.5rem;
+        width: 100%;
+    }
+    .four-1 h4{
+
+    }
+    .four-2{
+        padding-top: 0.5rem;
+        text-align: center;
+        padding-left: 0rem;
+    }
+    .footer{
+        margin: 1rem;
+        margin-top: -1rem;
+        margin-left: 2.5rem;
+    }
+
+    .five-1 img {
+        margin: 0.25rem 4rem;
+    }
+    .five-2 {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:1000px)
+{
+    .clients{
+        height: 15rem;
+    }
+
+}
+
+/* About page completed successfully */
