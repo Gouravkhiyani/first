@@ -53,7 +53,7 @@
                 <img src="./images/dir1.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show1()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(1)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname1">
@@ -63,14 +63,14 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide1()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(1)"></i>
             </div>
 
             <div class="directors-row-col" id="director2">
                 <img src="./images/dir2.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show2()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(2)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname2">
@@ -80,14 +80,14 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide2()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(2)"></i>
             </div>
 
             <div class="directors-row-col" id="director3">
                 <img src="./images/dir3.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show3()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(3)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname3">
@@ -97,7 +97,7 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide3()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(3)"></i>
             </div>
 
         </div>
@@ -107,7 +107,7 @@
                 <img src="./images/dir4.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show4()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(4)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname4">
@@ -117,14 +117,14 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide4()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(4)"></i>
             </div>
 
             <div class="directors-row-col" id="director5">
                 <img src="./images/dir5.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show5()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(5)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname5">
@@ -134,14 +134,14 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide5()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(5)"></i>
             </div>
 
             <div class="directors-row-col" id="director6">
                 <img src="./images/dir6.jpg" alt="">
                 <h5>Cristian Duncan</h5>
                 <p>Co-founder & COO</p>
-                <i class="bi bi-plus-circle-fill plusicon" onclick="show6()"></i>
+                <i class="bi bi-plus-circle-fill plusicon" onclick="show(6)"></i>
             </div>
 
             <div class="directors-row-col-hidden" id="directorname6">
@@ -151,7 +151,7 @@
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
-                <i class="bi bi-x-circle-fill plusicon" onclick="hide6()"></i>
+                <i class="bi bi-x-circle-fill plusicon" onclick="hide(6)"></i>
 
             </div>
 
@@ -215,65 +215,17 @@
     
 
     <script>
-        var btn1=document.getElementById("director1");
-        var close1=document.getElementById("directorname1");
-        function show1(){
-            director1.style.display="none";
-            directorname1.style.display="block";
+     const show = (value) => {
+                let bid = document.getElementById('director'.concat(value));
+                let dname=document.getElementById('directorname'.concat(value));
+                bid.style.display='none';
+                dname.style.display='block';
         }
-        function hide1(){
-            director1.style.display="block";
-            directorname1.style.display="none";
-        }
-        var btn2=document.getElementById("director2");
-        var close2=document.getElementById("directorname2");
-        function show2(){
-            director2.style.display="none";
-            directorname2.style.display="block";
-        }
-        function hide2(){
-            director2.style.display="block";
-            directorname2.style.display="none";
-        }
-        var btn3=document.getElementById("director3");
-        var close3=document.getElementById("directorname3");
-        function show3(){
-            director3.style.display="none";
-            directorname3.style.display="block";
-        }
-        function hide3(){
-            director3.style.display="block";
-            directorname3.style.display="none";
-        }
-        var btn4=document.getElementById("director4");
-        var close4=document.getElementById("directorname4");
-        function show4(){
-            director4.style.display="none";
-            directorname4.style.display="block";
-        }
-        function hide4(){
-            director4.style.display="block";
-            directorname4.style.display="none";
-        }
-        var btn5=document.getElementById("director5");
-        var close5=document.getElementById("directorname5");
-        function show5(){
-            director5.style.display="none";
-            directorname5.style.display="block";
-        }
-        function hide5(){
-            director5.style.display="block";
-            directorname5.style.display="none";
-        }
-        var btn6=document.getElementById("director6");
-        var close6=document.getElementById("directorname6");
-        function show6(){
-            director6.style.display="none";
-            directorname6.style.display="block";
-        }
-        function hide6(){
-            director6.style.display="block";
-            directorname6.style.display="none";
+        const hide=(value)=>{
+                let bid = document.getElementById('director'.concat(value));
+                let dname=document.getElementById('directorname'.concat(value));
+                bid.style.display='block';
+                dname.style.display='none';
         }
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
